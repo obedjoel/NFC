@@ -1,0 +1,6 @@
+{
+  "name": "Tarjeta NFC - Perfil Digital",
+  "description": "Landing page interactiva para tarjetas de presentación NFC con creador y simulador de perfiles digitales estilo Carrd o Linktree.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

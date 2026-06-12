@@ -1,0 +1,148 @@
+import { ProfileThemePreset, CardMaterial, CardLogoType, DigitalProfile, CardCustomization } from './types';
+
+export const THEME_PRESETS: ProfileThemePreset[] = [
+  {
+    id: 'cyberpunk',
+    name: 'Cyber Neon',
+    bgColorStart: 'bg-[#0f0c20]',
+    bgColorEnd: 'bg-[#15102a]',
+    textColor: 'text-purple-100',
+    btnBg: 'bg-gradient-to-r from-pink-500 to-purple-500',
+    btnTextColor: 'text-white',
+    btnStyle: 'glow',
+  },
+  {
+    id: 'minimal-warm',
+    name: 'Arena Tibio',
+    bgColorStart: 'bg-[#faf6f0]',
+    bgColorEnd: 'bg-[#f4ebe1]',
+    textColor: 'text-[#4a3f35]',
+    btnBg: 'bg-[#8c7863]',
+    btnTextColor: 'text-white',
+    btnStyle: 'pill',
+  },
+  {
+    id: 'dark-luxury',
+    name: 'Lujo Obsidiana',
+    bgColorStart: 'bg-[#121212]',
+    bgColorEnd: 'bg-[#1e1e1e]',
+    textColor: 'text-[#d4af37]',
+    btnBg: 'bg-gradient-to-r from-[#b38f2d] to-[#f4d068]',
+    btnTextColor: 'text-black font-semibold',
+    btnStyle: 'sharp',
+  },
+  {
+    id: 'forest-mint',
+    name: 'Selva & Menta',
+    bgColorStart: 'bg-[#0b1b11]',
+    bgColorEnd: 'bg-[#122e1b]',
+    textColor: 'text-emerald-100',
+    btnBg: 'bg-[#10b981]',
+    btnTextColor: 'text-[#06140b]',
+    btnStyle: 'rounded',
+  },
+  {
+    id: 'royal-blue',
+    name: 'Azul Real',
+    bgColorStart: 'bg-[#0d1b2a]',
+    bgColorEnd: 'bg-[#1b263b]',
+    textColor: 'text-blue-100',
+    btnBg: 'bg-[#0077b6]',
+    btnTextColor: 'text-white',
+    btnStyle: 'rounded',
+  },
+  {
+    id: 'sunset',
+    name: 'Atardecer Neon',
+    bgColorStart: 'bg-[#fc354c]',
+    bgColorEnd: 'bg-[#0abfbc]',
+    textColor: 'text-white',
+    btnBg: 'bg-white/10 backdrop-blur-md border border-white/20',
+    btnTextColor: 'text-white',
+    btnStyle: 'pill',
+  },
+];
+
+export const CARD_MATERIALS: { id: CardMaterial; name: string; bgClass: string; colorClass: string; textClass: string; desc: string }[] = [
+  {
+    id: 'minimal-white',
+    name: 'Blanco Glaciar Premium',
+    bgClass: 'bg-white',
+    colorClass: 'border-[#2D2926]/12 shadow-neutral-150',
+    textClass: 'text-[#2D2926]',
+    desc: 'Fondo blanco mate puro de secado inmediato. Diseñado para un contraste ultra-nítido de tipografías compactas.',
+  },
+  {
+    id: 'brushed-gold',
+    name: 'Marfil Natural Mate',
+    bgClass: 'bg-[#F7F5F0]',
+    colorClass: 'border-[#2D2926]/12 shadow-neutral-100',
+    textClass: 'text-[#2D2926]',
+    desc: 'Tono marfil cálido de absorción optimizada. Consumo mínimo de insumos y excelente fidelidad cromática orgánica.',
+  },
+  {
+    id: 'cosmic-purple',
+    name: 'Gris Platino Minimalista',
+    bgClass: 'bg-[#ECEAE6]',
+    colorClass: 'border-[#2D2926]/12 shadow-neutral-100',
+    textClass: 'text-[#2D2926]',
+    desc: 'Delicada estética gris plata que evita manchas de arrastre. Trazo limpio y secado instantáneo de tintas físicas.',
+  },
+  {
+    id: 'carbon-fiber',
+    name: 'Lino Texturizado Hueso',
+    bgClass: 'bg-[#F3EFE9]',
+    colorClass: 'border-[#2D2926]/12 shadow-neutral-100',
+    textClass: 'text-[#2D2926]',
+    desc: 'Boceto artesanal con micro-líneas finas. Distribución homogénea garantizando un delineado óptimo sin escurrimiento.',
+  },
+  {
+    id: 'matte-black',
+    name: 'Aluminio Mate Atrio',
+    bgClass: 'bg-[#F9F8F6]',
+    colorClass: 'border-[#2D2926]/15 shadow-neutral-100',
+    textClass: 'text-[#2D2926]',
+    desc: 'Aspecto industrial limpio de bajo impacto de carga. Secado ultra-rápido idóneo para producciones express de acabado terso.',
+  },
+];
+
+export const CARD_LOGOS: { id: CardLogoType; name: string }[] = [
+  { id: 'wireless', name: 'Onda NFC Wireless' },
+  { id: 'bolt', name: 'Rayo Dinámico' },
+  { id: 'sparkle', name: 'Destello Estelar' },
+  { id: 'crown', name: 'Emblema Realeza' },
+  { id: 'hex', name: 'Hexágono Futuro' },
+  { id: 'circle', name: 'Espiral Minimalista' },
+];
+
+export const INITIAL_PROFILE: DigitalProfile = {
+  name: 'Mateo González',
+  title: 'Consultor de Negocios & UX',
+  bio: 'Ayudo a marcas emergentes a estructurar y diseñar experiencias digitales inolvidables con altos índices de conversión. ¡Toca abajo para agendar o explorar mis enlaces!',
+  avatarUrl: '',
+  avatarType: 'emoji',
+  avatarEmoji: '⚡',
+  themePreset: 'cyberpunk',
+  bgColorStart: 'bg-[#0f0c20]',
+  bgColorEnd: 'bg-[#15102a]',
+  textColor: 'text-purple-100',
+  btnStyle: 'glow',
+  btnBg: 'bg-gradient-to-r from-pink-500 to-purple-500',
+  btnTextColor: 'text-white',
+  socials: [
+    { id: '1', label: 'Escríbeme por WhatsApp', url: 'https://wa.me/1234567890', icon: 'whatsapp', isActive: true },
+    { id: '2', label: 'Mi Portafolio Creativo', url: 'https://behance.net', icon: 'website', isActive: true },
+    { id: '3', label: 'Conéctate conmigo en LinkedIn', url: 'https://linkedin.com/in/username', icon: 'linkedin', isActive: true },
+    { id: '4', label: 'Sígueme en Instagram', url: 'https://instagram.com/username', icon: 'instagram', isActive: true },
+    { id: '5', label: 'Repositorio GitHub', url: 'https://github.com/username', icon: 'github', isActive: false },
+    { id: '6', label: 'Agendar cita gratuita 📆', url: 'https://calendly.com', icon: 'phone', isActive: true },
+  ],
+};
+
+export const INITIAL_CARD_CUSTOMIZATION: CardCustomization = {
+  material: 'minimal-white',
+  logo: 'wireless',
+  holderName: 'MATEO GONZÁLEZ',
+  customLogoText: 'CONNECT',
+  highlightColor: '#cca01b',
+};
