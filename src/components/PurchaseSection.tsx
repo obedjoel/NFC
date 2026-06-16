@@ -79,7 +79,7 @@ export const PurchaseSection: React.FC<PurchaseSectionProps> = ({ onShowMessage 
           <h3 className="text-3xl font-display font-black text-white uppercase tracking-tight">
             Nuestros Planes de Presentación NFC
           </h3>
-          <p className="text-slate-400 font-serif text-sm">
+          <p className="text-slate-400 font-sans text-sm">
             Elige el plan ideal para tus objetivos visuales y de vinculación profesional. Sin tarifas mensuales ni cargos ocultos.
           </p>
         </div>
@@ -100,7 +100,7 @@ export const PurchaseSection: React.FC<PurchaseSectionProps> = ({ onShowMessage 
               >
                 {/* Recommended Ribbon */}
                 {plan.recommended && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-cyan-500 text-[#020612] text-[8px] font-mono tracking-widest uppercase py-1 px-4 rounded-sm font-black shadow-md">
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-cyan-500 text-[#020612] text-[10px] sm:text-[11px] font-mono tracking-widest uppercase py-1 px-4 rounded-sm font-black shadow-md whitespace-nowrap">
                     ★ RECOMENDADO
                   </div>
                 )}
@@ -109,7 +109,7 @@ export const PurchaseSection: React.FC<PurchaseSectionProps> = ({ onShowMessage 
                   {/* Select indicator */}
                   <div className="flex justify-between items-start">
                     <div className="space-y-1">
-                      <span className="text-[9px] font-mono tracking-widest opacity-60 uppercase block text-cyan-400 font-semibold">
+                      <span className="text-[10px] sm:text-[11px] font-mono tracking-widest opacity-60 uppercase block text-cyan-400 font-semibold">
                         {plan.id === 'basic' ? 'BÁSICO' : plan.id === 'professional' ? 'SOPORTE COMPLETO' : 'EDICIÓN ESPECIAL'}
                       </span>
                       <h4 className="text-base font-display font-bold uppercase tracking-wider text-white">
@@ -130,7 +130,7 @@ export const PurchaseSection: React.FC<PurchaseSectionProps> = ({ onShowMessage 
                         {plan.price}
                       </span>
                     </div>
-                    <p className="text-xs text-slate-300 mt-1 italic font-light font-serif">
+                    <p className="text-xs text-slate-300 mt-1 italic font-light font-sans">
                       {plan.tagline}
                     </p>
                   </div>
@@ -157,7 +157,7 @@ export const PurchaseSection: React.FC<PurchaseSectionProps> = ({ onShowMessage 
                         setSelectedPlanId(plan.id);
                       }
                     }}
-                    className={`w-full py-2.5 text-[9px] font-mono tracking-widest uppercase rounded-sm border transition-all font-bold ${
+                    className={`w-full py-2.5 text-[10px] sm:text-[11px] font-mono tracking-widest uppercase rounded-sm border transition-all font-bold ${
                       isSelected
                         ? 'bg-cyan-500 text-[#020612] border-cyan-500 shadow-md shadow-cyan-500/10 hover:bg-cyan-400'
                         : 'bg-transparent text-slate-400 border-slate-800 hover:border-slate-700 hover:text-white hover:bg-white/5'
